@@ -19,7 +19,7 @@ jobs:
       with:
         ref:  main
         fetch-depth: 0
-        token: ${{ secrets.SYNC_UPSTREAM }}
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Sync upstream changes
       id: sync
